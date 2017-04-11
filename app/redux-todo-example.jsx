@@ -19,14 +19,20 @@ var reducer = (state = stateDefault, action) => {
       return state;
   }
 };
-var store = redux.createStore(reducer);
-console.log('currentState after store creation: ', store.getState());
+var store = redux.createStore(reducer, redux.compose(
+  window.devToolsExtension ? window.devToolsExtension() : f => f
+));
+
+// (Un-)Subscribe to changes
+var unsubscribe = store.subscribe(() => {
+  var state = store.getState();
+  document.getElementById('app').innerHTML = state.searchText;
+});
 
 store.dispatch({type: 'CHANGE_SEARCH_TEXT', searchText: 'show'});
-console.log('currentState after change searchText: ', store.getState());
-
 store.dispatch({type: 'CHANGE_SHOW_COMPLETED', showCompleted: true});
-console.log('currentState after change showCompleted: ', store.getState());
-
 store.dispatch({type: 'CHANGE_TODOS', toDos: ['learn git', 'learn react', 'learn redux']});
-console.log('currentState after change toDos: ', store.getState());
+
+store.dispatch({type: 'CHANGE_SEARCH_TEXT', searchText: 'learn'});
+store.dispatch({type: 'CHANGE_SEARCH_TEXT', searchText: 'walk'});
+store.dispatch({type: 'CHANGE_SEARCH_TEXT', searchText: 'buy'});

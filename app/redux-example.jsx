@@ -12,9 +12,17 @@ var reducer = (state = {name: 'Annonymous'}, action) => {
       return state;
   }
 };
-var store = redux.createStore(reducer);
-var currentState = store.getState();
-console.log('currentState: ', currentState);
+var store = redux.createStore(reducer, redux.compose(
+  window.devToolsExtension ? window.devToolsExtension() : f => f
+));
+
+// (Un-)Subscribe to changes
+var unsubscribe = store.subscribe(() => {
+  var state = store.getState();
+  document.getElementById('app').innerHTML = state.name;
+});
 
 store.dispatch({type: 'CHANGE_NAME', name: 'Nicholas'});
-console.log('currentState: ', store.getState());
+store.dispatch({type: 'CHANGE_NAME', name: 'Veronika'});
+// unsubscribe();
+store.dispatch({type: 'CHANGE_NAME', name: 'Emily'});
