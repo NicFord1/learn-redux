@@ -2,19 +2,21 @@ var redux = require('redux');
 
 console.log('Starting Redux Example');
 
-var stateDefault = {
-  name: 'Annonymous',
-  hobbies: [],
-  movies: []
-};
-var nextHobbyID = 1, nextMovieID = 1;
-
+// Name Reducer & Action Generators
+// --------------------------------
 var nameReducer = (state = 'Annonymous', action) => {
   switch (action.type) {
     case 'CHANGE_NAME': return action.name;
     default: return state;
   }
 };
+var changeName = (name) => {
+  return {type: 'CHANGE_NAME', name};
+};
+
+// Hobbies Reducer & Action Generators
+// -----------------------------------
+var nextHobbyID = 1;
 var hobbiesReducer = (state = [], action) => {
   switch (action.type) {
     case 'ADD_HOBBY': return [...state, {id: nextHobbyID++, hobby: action.hobby}];
@@ -22,6 +24,16 @@ var hobbiesReducer = (state = [], action) => {
     default: return state;
   }
 };
+var addHobby = (hobby) => {
+  return {type: 'ADD_HOBBY', hobby};
+};
+var removeHobby = (id) => {
+  return {type: 'REMOVE_HOBBY', id};
+};
+
+// Movies Reducer & Action Generators
+// ----------------------------------
+var nextMovieID = 1;
 var moviesReducer = (state = [], action) => {
   switch (action.type) {
     case 'ADD_MOVIE': return [...state, {id: nextMovieID++, title: action.title, genre: action.genre}];
@@ -29,6 +41,13 @@ var moviesReducer = (state = [], action) => {
     default: return state;
   }
 };
+var addMovie = (title, genre) => {
+  return {type: 'ADD_MOVIE', title, genre};
+};
+var removeMovie = (id) => {
+  return {type: 'REMOVE_MOVIE', id};
+};
+
 var reducer = redux.combineReducers({
   name: nameReducer,
   hobbies: hobbiesReducer,
@@ -44,14 +63,14 @@ var unsubscribe = store.subscribe(() => {
   document.getElementById('app').innerHTML = state.name;
 });
 
-store.dispatch({type: 'CHANGE_NAME', name: 'Nicholas'});
-store.dispatch({type: 'CHANGE_NAME', name: 'Veronika'});
-store.dispatch({type: 'ADD_HOBBY', hobby: 'Gaming'});
-store.dispatch({type: 'ADD_HOBBY', hobby: 'Running'});
-store.dispatch({type: 'REMOVE_HOBBY', id: 2});
+store.dispatch(changeName('Nicholas'));
+store.dispatch(changeName('Veronika'));
+store.dispatch(addHobby('Gaming'));
+store.dispatch(addHobby('Running'));
+store.dispatch(removeHobby(2));
 
 // unsubscribe();
-store.dispatch({type: 'CHANGE_NAME', name: 'Emily'});
-store.dispatch({type: 'ADD_MOVIE', title: 'Mad Max', genre: 'Action'});
-store.dispatch({type: 'ADD_MOVIE', title: 'Stargate', genre: 'Sci-Fi'});
-store.dispatch({type: 'REMOVE_MOVIE', id: 1});
+store.dispatch(changeName('Emily'));
+store.dispatch(addMovie('Mad Max', 'Action'));
+store.dispatch(addMovie('Stargate', 'Sci-Fi'));
+store.dispatch(removeMovie(1));
