@@ -900,7 +900,7 @@ eval("/*\r\n\tMIT License http://www.opensource.org/licenses/mit-license.php\r\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function($) {\n\nvar React = __webpack_require__(16);\nvar ReactDOM = __webpack_require__(163);\n\nvar _require = __webpack_require__(246),\n    Route = _require.Route,\n    Router = _require.Router,\n    IndexRoute = _require.IndexRoute,\n    hashHistory = _require.hashHistory;\n\n//Load Foundation\n\n\n$(document).foundation();\n\n//App CSS\n__webpack_require__(271);\n\n//Main App Code\nReactDOM.render(React.createElement(\n  'p',\n  null,\n  'Boilerplate 3 Project'\n), document.getElementById('app'));\n\n__webpack_require__(122);\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(276)))//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTE5LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vL2FwcC9hcHAuanN4P2JiNDkiXSwic291cmNlc0NvbnRlbnQiOlsidmFyIFJlYWN0ID0gcmVxdWlyZSgncmVhY3QnKTtcclxudmFyIFJlYWN0RE9NID0gcmVxdWlyZSgncmVhY3QtZG9tJyk7XHJcbnZhciB7Um91dGUsIFJvdXRlciwgSW5kZXhSb3V0ZSwgaGFzaEhpc3Rvcnl9ID0gcmVxdWlyZSgncmVhY3Qtcm91dGVyJyk7XHJcblxyXG4vL0xvYWQgRm91bmRhdGlvblxyXG4kKGRvY3VtZW50KS5mb3VuZGF0aW9uKCk7XHJcblxyXG4vL0FwcCBDU1NcclxucmVxdWlyZSgnYXBwbGljYXRpb25TdHlsZXMnKTtcclxuXHJcbi8vTWFpbiBBcHAgQ29kZVxyXG5SZWFjdERPTS5yZW5kZXIoXHJcbiAgPHA+Qm9pbGVycGxhdGUgMyBQcm9qZWN0PC9wPixcclxuICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnYXBwJylcclxuKTtcclxuXHJcbnJlcXVpcmUoJy4vcmVkdXgtZXhhbXBsZS5qc3gnKTtcclxuXG5cblxuLy8gV0VCUEFDSyBGT09URVIgLy9cbi8vIGFwcC9hcHAuanN4Il0sIm1hcHBpbmdzIjoiOztBQUFBO0FBQ0E7QUFDQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQURBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQUdBO0EiLCJzb3VyY2VSb290IjoiIn0=");
+eval("/* WEBPACK VAR INJECTION */(function($) {\n\nvar React = __webpack_require__(16);\nvar ReactDOM = __webpack_require__(163);\n\nvar _require = __webpack_require__(246),\n    Route = _require.Route,\n    Router = _require.Router,\n    IndexRoute = _require.IndexRoute,\n    hashHistory = _require.hashHistory;\n\n//Load Foundation\n\n\n$(document).foundation();\n\n//App CSS\n__webpack_require__(271);\n\n//Main App Code\nReactDOM.render(React.createElement(\n  'p',\n  null,\n  'Boilerplate 3 Project'\n), document.getElementById('app'));\n\n// require('./redux-example.jsx');\n__webpack_require__(278);\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(276)))//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTE5LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vL2FwcC9hcHAuanN4P2JiNDkiXSwic291cmNlc0NvbnRlbnQiOlsidmFyIFJlYWN0ID0gcmVxdWlyZSgncmVhY3QnKTtcclxudmFyIFJlYWN0RE9NID0gcmVxdWlyZSgncmVhY3QtZG9tJyk7XHJcbnZhciB7Um91dGUsIFJvdXRlciwgSW5kZXhSb3V0ZSwgaGFzaEhpc3Rvcnl9ID0gcmVxdWlyZSgncmVhY3Qtcm91dGVyJyk7XHJcblxyXG4vL0xvYWQgRm91bmRhdGlvblxyXG4kKGRvY3VtZW50KS5mb3VuZGF0aW9uKCk7XHJcblxyXG4vL0FwcCBDU1NcclxucmVxdWlyZSgnYXBwbGljYXRpb25TdHlsZXMnKTtcclxuXHJcbi8vTWFpbiBBcHAgQ29kZVxyXG5SZWFjdERPTS5yZW5kZXIoXHJcbiAgPHA+Qm9pbGVycGxhdGUgMyBQcm9qZWN0PC9wPixcclxuICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnYXBwJylcclxuKTtcclxuXHJcbi8vIHJlcXVpcmUoJy4vcmVkdXgtZXhhbXBsZS5qc3gnKTtcclxucmVxdWlyZSgnLi9yZWR1eC10b2RvLWV4YW1wbGUuanN4Jyk7XHJcblxuXG5cbi8vIFdFQlBBQ0sgRk9PVEVSIC8vXG4vLyBhcHAvYXBwLmpzeCJdLCJtYXBwaW5ncyI6Ijs7QUFBQTtBQUNBO0FBQ0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFEQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFHQTtBQUNBO0EiLCJzb3VyY2VSb290IjoiIn0=");
 
 /***/ }),
 /* 120 */
@@ -915,13 +915,7 @@ eval("__webpack_require__(118)(__webpack_require__(161))//# sourceMappingURL=dat
 eval("__webpack_require__(118)(__webpack_require__(162))//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTIxLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vfi9qcXVlcnkvZGlzdC9qcXVlcnkubWluLmpzPzQ4ZDEiXSwic291cmNlc0NvbnRlbnQiOlsicmVxdWlyZShcIiEhRDpcXFxcVXNlcnNcXFxcTmljaG9cXFxcRG9jdW1lbnRzXFxcXEdpdEh1YlxcXFxDb21wbGV0ZVJlYWN0V2ViXFxcXGxlYXJuLXJlZHV4XFxcXG5vZGVfbW9kdWxlc1xcXFxzY3JpcHQtbG9hZGVyXFxcXGFkZFNjcmlwdC5qc1wiKShyZXF1aXJlKFwiISFEOlxcXFxVc2Vyc1xcXFxOaWNob1xcXFxEb2N1bWVudHNcXFxcR2l0SHViXFxcXENvbXBsZXRlUmVhY3RXZWJcXFxcbGVhcm4tcmVkdXhcXFxcbm9kZV9tb2R1bGVzXFxcXHJhdy1sb2FkZXJcXFxcaW5kZXguanMhRDpcXFxcVXNlcnNcXFxcTmljaG9cXFxcRG9jdW1lbnRzXFxcXEdpdEh1YlxcXFxDb21wbGV0ZVJlYWN0V2ViXFxcXGxlYXJuLXJlZHV4XFxcXG5vZGVfbW9kdWxlc1xcXFxqcXVlcnlcXFxcZGlzdFxcXFxqcXVlcnkubWluLmpzXCIpKVxuXG5cbi8vLy8vLy8vLy8vLy8vLy8vL1xuLy8gV0VCUEFDSyBGT09URVJcbi8vIC4vfi9zY3JpcHQtbG9hZGVyIS4vfi9qcXVlcnkvZGlzdC9qcXVlcnkubWluLmpzXG4vLyBtb2R1bGUgaWQgPSAxMjFcbi8vIG1vZHVsZSBjaHVua3MgPSAwIl0sIm1hcHBpbmdzIjoiQUFBQSIsInNvdXJjZVJvb3QiOiIifQ==");
 
 /***/ }),
-/* 122 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nvar redux = __webpack_require__(267);\n\nconsole.log('Starting redux example');//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTIyLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vL2FwcC9yZWR1eC1leGFtcGxlLmpzeD8wNTA4Il0sInNvdXJjZXNDb250ZW50IjpbInZhciByZWR1eCA9IHJlcXVpcmUoJ3JlZHV4Jyk7XHJcblxyXG5jb25zb2xlLmxvZygnU3RhcnRpbmcgcmVkdXggZXhhbXBsZScpO1xyXG5cblxuXG4vLyBXRUJQQUNLIEZPT1RFUiAvL1xuLy8gYXBwL3JlZHV4LWV4YW1wbGUuanN4Il0sIm1hcHBpbmdzIjoiOztBQUFBO0FBQ0E7QUFDQSIsInNvdXJjZVJvb3QiOiIifQ==");
-
-/***/ }),
+/* 122 */,
 /* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1995,6 +1989,13 @@ __webpack_require__(121);
 __webpack_require__(120);
 module.exports = __webpack_require__(119);
 
+
+/***/ }),
+/* 278 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar redux = __webpack_require__(267);\n\nconsole.log('Starting Redux ToDo Example');\n\nvar stateDefault = {\n  searchText: '',\n  showCompleted: false,\n  toDos: []\n};\nvar reducer = function reducer() {\n  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : stateDefault;\n  var action = arguments[1];\n\n  return state;\n};\nvar store = redux.createStore(reducer);\nconsole.log('currentState: ', store.getState());//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMjc4LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vL2FwcC9yZWR1eC10b2RvLWV4YW1wbGUuanN4PzE0NDMiXSwic291cmNlc0NvbnRlbnQiOlsidmFyIHJlZHV4ID0gcmVxdWlyZSgncmVkdXgnKTtcclxuXHJcbmNvbnNvbGUubG9nKCdTdGFydGluZyBSZWR1eCBUb0RvIEV4YW1wbGUnKTtcclxuXHJcbnZhciBzdGF0ZURlZmF1bHQgPSB7XHJcbiAgc2VhcmNoVGV4dDogJycsXHJcbiAgc2hvd0NvbXBsZXRlZDogZmFsc2UsXHJcbiAgdG9Eb3M6IFtdXHJcbn07XHJcbnZhciByZWR1Y2VyID0gKHN0YXRlID0gc3RhdGVEZWZhdWx0LCBhY3Rpb24pID0+IHtcclxuICByZXR1cm4gc3RhdGU7XHJcbn07XHJcbnZhciBzdG9yZSA9IHJlZHV4LmNyZWF0ZVN0b3JlKHJlZHVjZXIpO1xyXG5jb25zb2xlLmxvZygnY3VycmVudFN0YXRlOiAnLCBzdG9yZS5nZXRTdGF0ZSgpKTtcclxuXG5cblxuLy8gV0VCUEFDSyBGT09URVIgLy9cbi8vIGFwcC9yZWR1eC10b2RvLWV4YW1wbGUuanN4Il0sIm1hcHBpbmdzIjoiOztBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFIQTtBQUtBO0FBQUE7QUFBQTtBQUNBO0FBQUE7QUFDQTtBQUNBO0FBQ0EiLCJzb3VyY2VSb290IjoiIn0=");
 
 /***/ })
 /******/ ]);
